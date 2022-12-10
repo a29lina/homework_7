@@ -106,55 +106,27 @@ void Zadacha52()
     int m = 5;
     int n = 4;
 
-
-    int[,] arr = new int[m, n];
+    int[,] arr = new int[m,n];
 
     FillArray(arr);
     PrintArray(arr);
 
-    double sum = 0;
-    for (int i = 0; i < m; i++)
+
+
+    for (int i = 0; i < n; i++)
     {
-        sum = ((sum + arr[i, 0]));
+        double avg = 0;
+        double sum = 0;
+        
+        for (int j = 0; j < m; j++)
+        {
+            sum = ((sum + arr[j, i]));
+        }
+
+        Console.WriteLine();
+        avg = sum / m;
+        Console.WriteLine(avg);
     }
-    
-    double avg = sum / m;
-    Console.WriteLine(avg);
-
-    sum = 0;
-    for (int i = 0; i < m; i++)
-    {
-        sum = ((sum + arr[i, 1]));
-    }
-    
-    avg = sum / m;
-    Console.WriteLine(avg);
-
-    sum = 0;
-    for (int i = 0; i < m; i++)
-    {
-        sum = ((sum + arr[i, 2]));
-    }
-    avg = sum / m;
-    Console.WriteLine(avg);
-
-    sum = 0;
-    for (int i = 0; i < m; i++)
-    {
-        sum = ((sum + arr[i, 3]));
-    }
-
-    avg = sum / m;
-    Console.WriteLine(avg);
-
-    sum = 0;
-    for (int i = 0; i < m; i++)
-    {
-        sum = ((sum + arr[i, 4]));
-    }
-
-    avg = sum / m;
-    Console.WriteLine(avg);
 
 }
 
