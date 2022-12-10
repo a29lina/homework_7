@@ -129,5 +129,3 @@ void Zadacha52()
     }
 
 }
-
-Zadacha52();
